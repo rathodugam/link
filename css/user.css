@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+html {
+    overflow-x: hidden;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 1);
+    color: #1A202C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #1A202C;
+}
+h1 {
+    font-size: 64px;
+    line-height: 75px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 42px;
+}
+h4 {
+    font-size: 24px;
+    line-height: 34px;
+}
+h5 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.p_white p,
+.h_white h1,
+.h_white h2, 
+.h_white h3, 
+.h_white h4, 
+.h_white h5, 
+.h_white h6{
+    color: #fff;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease 0s;
+}
+
+p:last-child {
+    margin: 0;
+}
+
+p.big {
+    font-size: 18px;
+    line-height: 26px;
+}
+div {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.l_padding{
+    padding: 60px 0;
+}
+a {
+    line-height: 24px;
+    font-size: 16px;
+    color: #1A202C;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+a:focus, a:hover {
+    color: #001EFF;
+}
+.l_btn a{
+    font-size: 13px;
+	line-height: 55px;
+	font-weight: 400;
+	height: 55px;
+	padding: 0 25px;
+	border-radius: 10px;
+	transition: all 0.3s ease 0s;
+	border: 1px solid #E2E8F0;
+    display: flex;
+    align-items: center;
+}
+.g_btn a{
+    font-size: 16px;
+	line-height: 55px;
+	font-weight: 400;
+	height: 55px;
+	padding: 0 25px;
+	border-radius: 10px;
+	transition: all 0.3s ease 0s;
+	border: 1px solid #E2E8F0;
+    display: inline-block;
+
+}
+.s_btn a{
+    background: radial-gradient(98.95% 5752.79% at 2.11% 50%, #FF80BE 0%, #CA53F1 60.42%, #0436E7 99.99%, #FFFFFF 100%);
+    border-radius: 12px;
+    color: #fff;
+    width: 100%;
+}
+.s_btn:hover a{
+    background: radial-gradient(98.95% 5752.79% at 2.11% 50%, #FF80BE 0%, #CA53F1 80.42%);
+    color: #0436E7;
+}
+::selection {
+    color: #fff;
+    background: #0463d1;
+}
+
+.form-control,
+.form-select {
+    background-color: #fff;
+    border: 0.5px solid #E2E8F0;
+    outline: none;
+    box-shadow: none;
+    border-radius: 12px;
+    height: 50px;
+}
+
+span.input-group-text {
+    background: transparent;
+    border-left: 0;
+    border-radius: 12px;
+    border: 0.5px solid #E2E8F0;
+}
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-color: #E2E8F0;
+    color: #1A202C;
+}
+::placeholder{
+    color: #A0AEC0;
+}
+input#password {
+    border-right: 0;
+}
+.mb_20{
+    margin-bottom: 20px;
+}
+.mb_30{
+    margin-bottom: 30px;
+}
+.pb_20{
+    padding-bottom: 20px;
+}
+.pb_30{
+    padding-bottom: 30px;
+}
+.pt_10{
+    padding-top: 10px;
+}
+.pt_20{
+    padding-top: 20px;
+}
+/* main css  */
+body.bg-ovel{
+    background-image: url(../images/bg-ovel.svg);
+    background-repeat: no-repeat;
+
+}
+body.bg-ovel.signup{
+    background-image: url(../images/bg-ovel.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+.logo img {
+    height: 50px;
+}
+.sign_in_button {
+    display: flex;
+    justify-content: center;
+}
+.l_btn a img {
+    margin-right: 10px;
+}
+.display_s{
+    display: flex;
+    justify-content: space-between;
+}
+/* right slde  */
+
+.sign_in_form {
+    padding: 70px 50px;
+}
+.sign_up_form{
+    padding: 30px 50px;
+}
+.signup_with_bg,
+.signin_with_bg{
+    background: radial-gradient(131.34% 131.34% at 95.1% -12.45%, #0436E7 0%, rgba(114, 142, 242, 0.5625) 43.75%, rgba(255, 255, 255, 0) 100%) ,
+                radial-gradient(147.55% 147.55% at -12.21% 75.84%, #CA53F1 0%, rgba(255, 255, 255, 0) 100%) , 
+                radial-gradient(124.06% 124.06% at 105.7% 111.04%, #FF80BE 0%, rgba(255, 255, 255, 0) 100%), 
+                #FFFFFF;
+    background-blend-mode: multiply, multiply, multiply, normal;
+    border-radius: 6.42401px;
+    position: relative;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.signup_with_bg::after,
+.signin_with_bg::after{
+    content: '';
+    background: url(../images/signin-pattern.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+.body_image img {
+    max-height: 330px;
+    margin-top: 50px;
+}
+.sign_up_form.text-center,
+.sign_in_form.text-center {
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.sign_in_button .l_btn {
+    margin-left: 20px;
+}
+.email_heading_wrap {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    color: #718096;
+}
+.email_heading_wrap:after {
+    width: 35%;
+    height: 2px;
+    color: #E2E8F0;
+    position: absolute;
+    left: 0;
+    top: 32px;
+    background: #E2E8F0;
+    content: '';
+    bottom: 0;
+    align-items: center;
+    display: flex;
+}
+.email_heading_wrap::before {
+    content: '';
+    width: 35%;
+    height: 2px;
+    color: #E2E8F0;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    background: #E2E8F0; 
+    align-items: center;
+    display: flex;
+}
+.remaber .form-check {
+    font-size: 16px;
+    line-height: 26px;
+}
+.remaber {
+    padding: 10px 0;
+}
+.top_dot {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.top_dot img {
+    height: 80px;
+}
+
+.bottom_img.text-start {
+    margin-top: 50px;
+}
+/* slider  */
+.signin_slider {
+    padding: 40px 20px 0px 20px;
+    position: relative;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -30px !important;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #fff;
+    width: 35px;
+    border-radius: 10px;
+    transition: 0.3 all ease-in-out;
+}
+span.swiper-pagination-bullet {
+    background: #fff;
+}
+.signup_policy {
+    color: #718096;
+    padding: 10px 0;
+}
+/* otp page  */
+.otp_oval{
+    background-image: url(../images/opt_bg.svg);
+    background-repeat: no-repeat;
+    background-position: top-center;
+    height: 100%;
+    width: 100%;
+}
