@@ -1,6 +1,5 @@
 // const togglePassword = document.querySelector("#togglePassword");
 // const password = document.querySelector("#password");
-
 togglePassword.addEventListener("click", function () {
    
   // toggle the type attribute
@@ -11,3 +10,5 @@ togglePassword.addEventListener("click", function () {
   this.classList.toggle('fa-eye');
   this.classList.toggle('fa-eye-slash');
 });
+
+
