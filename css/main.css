@@ -176,6 +176,9 @@ input#password {
 .mt_10{
     margin-top: 30px;
 }
+.mt_20{
+    margin-top: 20px;
+}
 .mb_20{
     margin-bottom: 20px;
 }
@@ -526,8 +529,15 @@ section.faq_sec::before{
 }
 .accordion .accordion-item {
     background: #001EFF;
-    padding: 30px 10px !important;
     border-radius: 32px !important;
+}
+.accordion-item h3.accordion-header button {
+    padding: 30px 25px !important;
+    box-shadow: none;
+    background: transparent !important; 
+}
+.accordion-item{
+    margin-bottom: 20px;
 }
 .accordion-body,
 .accordion-button::after,
@@ -539,4 +549,76 @@ button.accordion-button {
     font-family: 'FontAwesome';
     background-image: none !important;
     font-size: 18px !important;
+}
+
+/* mega footer  */
+footer.mega_footer {
+    background: radial-gradient(98.95% 5752.79% at 2.11% 50%, rgba(255, 128, 190, 0.69) 0%, rgba(202, 83, 241, 0.69) 60.42%, rgba(4, 54, 231, 0.69) 99.99%, rgba(255, 255, 255, 0.69) 100%);
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.footer-left h2 {
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: 600;
+}
+.footer-left p {
+    max-width: 523px;
+    margin: 0 auto;
+    margin-bottom: 20px !important;
+}
+.footer-left {
+    margin: 0 auto;
+    max-width: 623px;
+}
+.f_btn a {
+    background: #001EFF;
+    border: 1px solid #001EFF;
+    color: #fff;
+    font-size: 16px;
+}
+.f_btn a:hover{
+    background: transparent;
+    color: #001EFF;
+    border: 1px solid #fff;
+}
+
+.bottom_footer {
+    background: #141432;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    padding: 80px 100px;
+    border-radius: 30px 30px 0 0;
+}
+.bottom_footer .footer_colum {
+    width: 19%;
+    margin-right: 1%;
+    color: #fff;
+}
+.footer_heading p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 22px !important;
+}
+.footer_colum ul {
+    padding: 0;
+}
+.footer_colum ul li{
+    padding: 5px 0;
+}
+.copy_right p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.socoal_icon ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.socoal_icon ul li {
+    margin: 0 15px;
 }

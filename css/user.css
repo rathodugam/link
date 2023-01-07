@@ -367,17 +367,27 @@ section.opt_headr {
 }
 
 .dropdown button.btn.btn-outline-secondary.dropdown-toggle {
-    /* width: 100%; */
     height: 55px;
-    /* background-color: #fff; */
     border: 0.5px solid #E2E8F0;
     outline: none;
     box-shadow: none;
     border-radius: 12px;
     height: 50px;
-    /* flex: 1 1 0px; */
-    /* position: relative; */
-    /* flex: 1 1 auto; */
-    /* width: 1%; */
-    /* min-width: 0; */
+}
+.reade_check,
+.instructions ul {
+    max-width: 400px;
+    margin-left: auto;
+}
+.instructions ul li {
+    list-style: disc;
+    margin: 20px 20px;
+    line-height: 20px;
+    font-size: 16px;
+}
+.reade_check {
+    padding: 20px 0;
+}
+.reade_check input:checked ~ .checkmark{
+    background-color: #ccc;
 }
