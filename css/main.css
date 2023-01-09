@@ -622,3 +622,66 @@ footer.mega_footer {
 .socoal_icon ul li {
     margin: 0 15px;
 }
+
+
+/* Dashboard css  */
+ 
+
+.side-navbar {
+    width: 210px;
+    height: 100%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #1D1D42;
+    transition: 0.5s;
+  }
+  
+
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 180px;
+  }
+  
+  #menu-btn {
+    background-color: #100901;
+    color: #fff;
+    margin-left: -62px;
+  }
+  .side-navbar ul li.nav-link{
+    color: #fff;
+  }
+  .my-container input {
+    border-radius: 2rem;
+    padding: 2px 20px;
+  }
+  .side-navbar ul li.nav-link.active{  
+    background: linear-gradient(100.38deg, rgba(211, 125, 234, 0.65) 9.33%, rgba(83, 73, 234, 0.65) 98.32%);
+    opacity: 0.94;
+    border-radius: 9px;
+    color: #fff;
+  }
+  .side-navbar ul li.nav-link:hover{
+    background: linear-gradient(100.38deg, rgba(211, 125, 234, 0.65) 9.33%, rgba(83, 73, 234, 0.65) 98.32%);
+    opacity: 0.94;
+    border-radius: 9px;
+  }
+  .side-navbar ul li.nav-link{
+    margin-bottom: 20px;
+  }
+ .d_social_icon a i {
+    margin-left: 15px;
+    text-align: center;
+    color: rgba(67, 86, 234, 1);
+    font-size: 24px;
+}
+i.fa.fa-youtube-play{
+    color: #C81E10;
+}
