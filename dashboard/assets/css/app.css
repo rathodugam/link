@@ -1,18 +1,10 @@
 
-/*
-Template Name: Rocker Admin
-Author: codervent
-Email: codervent@gmail.com
-File: app.css
-*/
-
 body {
 	font-size: 14px;
 	color: #4c5258;
 	letter-spacing: .5px;
-	background: #f7f7ff;
+	background: #F3F3F3;
 	overflow-x: hidden;
-	font-family: Roboto, sans-serif
 }
 
 a {
@@ -59,7 +51,7 @@ a {
     color: #fff;
 }
 .logo-icon {
-	width: 45px
+	width: 70px
 }
 
 .logo-text {
@@ -85,10 +77,18 @@ a {
 	background: #fff;
 	border-bottom: 1px solid rgb(228 228 228 / 0%);
 	z-index: 10;
-	-webkit-box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 0px 6px 0 rgb(206 206 238 / 54%);
-    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 0px 6px 0 rgb(206 206 238 / 54%);
+	/* -webkit-box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 0px 6px 0 rgb(206 206 238 / 54%);
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 0px 6px 0 rgb(206 206 238 / 54%); */
+	border-bottom: 1px solid #eee;
 }
 
+.breadcrumbs {
+    background: #fff;
+    padding: 20px 40px;
+}
+.breadcrumbs p {
+	margin-bottom: 0;
+}
 .topbar .navbar {
 	width: 100%;
 	height: 60px;
@@ -255,7 +255,26 @@ a {
 	top: 50%;
 	transition: all .3s ease-out
 }
+.card {
+    margin-bottom: 1.5rem;
+    box-shadow: none;
+    width: 207px;
+    background: #FFFFFF;
+    border: 1px solid #CA53F1;
+    border-radius: 10px;
+}
 
+.card-body {
+    height: 78px;
+    display: flex;
+    align-items: center;
+}
+.card-body h4.Name {
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 20px;
+	margin-bottom: 0;
+}
 @media screen and (min-width:1025px) {
 	.wrapper.toggled:not(.sidebar-hovered) .sidebar-wrapper .sidebar-header .logo-text {
 		display: none
@@ -2100,7 +2119,7 @@ input.search-control-2::placeholder {
 	font-size: 12px;
 	font-weight: 500;
 	color: #fff;
-	background: #f62718
+	background: #E7DF31;
 }
 
 .user-img {
