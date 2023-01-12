@@ -82,3 +82,14 @@ $(function() {
 		})
 		
 });
+
+
+(function($) {
+
+	$('.second.circle').circleProgress({
+	  value: 0.6,
+	  fill: {color: 'rgba(234, 39, 238, 1)'}
+	}).on('circle-animation-progress', function(event, progress) {
+	  $(this).find('strong').html(Math.round(40 * progress) + '<i>%</i>');
+	});
+  })(jQuery);

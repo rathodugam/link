@@ -19,6 +19,7 @@
 	<link href="assets/css/icons.css" rel="stylesheet">
 	<!-- Theme Style CSS -->
 	<link rel="stylesheet" href="assets/css/header-colors.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Admin Dashboard</title>
 </head>
 
@@ -62,6 +63,18 @@
 				</li>
 			</ul>
 			<!--end navigation-->
+			<div class="dashboard_bottom_wrap">
+				<h5 class="text-white">Follow Us</h5>
+				<div class="d_social_icon">
+				 <a href=""><i class="fa fa-facebook"></i></a>
+				 <a href=""><i class="fa fa-youtube-play"></i></a>
+				 <a href=""><i class="fa fa-twitter"></i></a>
+				 <a href=""><i class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="copy_right">
+					<p class="text-white">Copyright © itoagency</p>
+				</div>
+			</div>
 		</div>
 		<!--end sidebar wrapper -->
 		<!--start header -->
@@ -393,7 +406,7 @@
 								<div class="row">
 									<div class="col-xl-4">
 									  <div class="card">
-										<a href="#">
+										<a data-bs-toggle="modal" href="#myModal">
 											<div class="card-body">
 												<div class="d-flex align-items-center">
 													<div class="card-icon">
@@ -629,7 +642,44 @@
 					</div>
 					<div class="col-md-3">
 						<div class="dashboard_right">
-
+							<div class="profile_dashboard">
+								<div class="profile_heading">
+									<p>complete profile</p>
+								</div>
+								<div class="profile_wrap">
+									<div class="profile_img">
+										<a href="#">
+										<img src="assets/images/profile_pic.png" alt="">
+										<div class="edit_wrap">
+											<img src="assets/images/edit-icon.svg">
+										</div>
+										</a>
+										<p>Edit</p>
+									</div>
+									<div class="profile_status">
+										<div class="circles">
+											<div class="second circle">
+											  <strong>40<i>%</i></strong>											
+											</div>
+										  </div>
+									</div>
+								</div>
+								<div class="username_wrap">
+									<div class="username">
+										<p>@Username</p>
+										<a href="#"><img src="assets/images/share-icon.svg"></a>
+									</div>
+									<div class="link_wrap">
+										<p>Linkrays.com /<span>Username</span></p>
+										<a href="#"><img src="assets/images/capy-icon.png"></a>
+									</div>
+								</div>
+							</div>
+							<div class="save_button_wrap text-center mb-3">
+								<div class="l_btn d_btn">
+									<a href="#">Save profile</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -638,6 +688,48 @@
 			</div>
 		</div>
 		<!--end page wrapper -->
+	<!-- popup section  -->
+
+
+			<div class="modal" id="myModal" data-bs-backdrop="static">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h4 class="modal-title">Modal title</h4>    
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+						</div><div class="container"></div>
+						<div class="modal-body">
+						Content for the dialog / modal goes here.
+						<a data-bs-toggle="modal" href="#myModal2" class="btn btn-primary">Launch modal</a>
+						</div>
+						<div class="modal-footer">
+						<a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Close</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal" id="myModal2" data-bs-backdrop="static">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h4 class="modal-title">2nd Modal title</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+						</div><div class="container"></div>
+						<div class="modal-body">
+						Content for the dialog / modal goes here.
+						Content for the dialog / modal goes here.
+						Content for the dialog / modal goes here.
+						Content for the dialog / modal goes here.
+						Content for the dialog / modal goes here.
+						</div>
+						<div class="modal-footer">
+						<a href="#" data-bs-dismiss="modal" class="btn btn-outline-dark">Close</a>
+						<a href="#" class="btn btn-primary">Save changes</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	<!-- end popup section  -->
 		<!--start overlay-->
 		<div class="overlay toggle-icon"></div>
 		<!--end overlay-->
@@ -661,7 +753,9 @@
 	<script src="assets/plugins/chartjs/js/Chart.extension.js"></script>
 	<script src="assets/js/index.js"></script>
 	<!--app JS-->
+	<script src="assets/js/circle-progress.min.js"></script>
 	<script src="assets/js/app.js"></script>
+
 </body>
 
 </html>
